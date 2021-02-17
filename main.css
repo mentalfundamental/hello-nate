@@ -3,3 +3,8 @@ h1 {
     color: white;
     text-align: center;
 }
+
+.divClass {
+    padding: 2rem;
+    background-color: blue;
+}
