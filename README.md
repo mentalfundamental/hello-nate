@@ -1,6 +1,6 @@
 # hello-nate
 
-This repository is built as an extension of my *Software Engineering* career - and some aspects of my personal life. 
+This repository is built as an extension of my *Software Engineering* journey - and some aspects of my personal life. 
 
 This will and should serve as an outlet for my creativity, wild ideas, brain farts, and more.
 
