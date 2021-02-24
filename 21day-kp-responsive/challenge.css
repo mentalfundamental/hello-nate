@@ -1,38 +1,63 @@
-/* INSTRUCTIONS
- *
- * 1) Limit the total width of
- *    the .intro-conent to about half
- *    of it's parent
- *
- * 2) Stop the text from overflowing
- *    out the bottom at small screen
- *    widths
- *
- * You may modify the HTML if needed
- *
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
+/* reset */
 
- * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  .container {
-    background: #23424a;
-    color: white;
-  
-    width: 100%;
-    margin: 0 auto;
-  
-    padding: 2em;
-  }
+* { box-sizing: border-box; }
 
-  .intro-content {
-      width: 50%;
-  }
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
 
-  
+/* navbar */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  border-right: 4px solid black;
+}
+
+
+#navbar-title {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#navbar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+#navbar-menu li {
+  padding: 3em 1em;
+  border-top: 2px solid black;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  background: black;
+  color: white;
+}
+
+/* main-section */
+
+.main-section {
+  padding-left: 16em;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
