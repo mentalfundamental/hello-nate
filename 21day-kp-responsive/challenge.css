@@ -61,3 +61,40 @@ h1 {
 h2 {
   font-size: 1.3rem;
 }
+
+@media (max-width: 540px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 7rem;
+    border-right: 2px solid black;
+  }
+
+  #navbar-title {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #navbar-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #navbar-menu li {
+    padding:0.5em;
+    border-top: 2px solid black;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+  }
+
+  .main-section {
+    padding-left: 8em;
+  }
+}
