@@ -137,7 +137,7 @@ function randomColor() {
     if (n === 9) {
         shapeContainer.style.backgroundColor = 'Lightblue';
         shapeContainer.style.color = 'black';
-        choice1.innerHTML = 'light blue';
+        choice1.innerHTML = 'lightblue';
         choice2.innerHTML = 'gray';
         correctAns = shapeContainer.style.backgroundColor;
     };
