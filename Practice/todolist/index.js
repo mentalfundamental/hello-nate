@@ -6,6 +6,12 @@ let menu = document.getElementById('menu');
 let field = document.getElementById('field');
 
 //addItem
+field.addEventListener('keypress', enterBtn);
+function enterBtn(e) {
+    if (e.key === 'Enter'){ 
+        addItem();
+    }
+}
 addButton.addEventListener('click', addItem);
 function addItem() {
     let newButtonsBox = document.createElement('div');
