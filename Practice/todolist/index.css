@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: rgb(22, 22, 22);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+#main {
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid white;
+}
+
+#title-box, #input-box, #menu-box {
+    padding: 1em;
+    width: 100%;
+}
+
+#title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+#field {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.3em;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+#add {
+    width: 30%;
+    max-width: 100px;
+    padding: 0.5em;
+    margin: 1em 0 0.5em;
+    background: none;
+    color: white;
+    border: 1px solid white;
+
+}
+
+#menu-box {
+    width: 100%;
+    padding: 1em;
+    padding-top: 0;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3em 0;
+    padding: 0.3em;
+    border: 1px solid white;
+}
+
+.text {
+    display: block;
+    width: 60%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check, .del {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.3em;
+    background-color: rgb(22, 22, 22);
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border: 1px solid rgb(105, 223, 144);
+    color: rgb(105, 223, 144);
+}
+
+.del {
+    border: 1px solid rgb(255, 109, 109);
+    color: rgb(255, 109, 109);
+}
