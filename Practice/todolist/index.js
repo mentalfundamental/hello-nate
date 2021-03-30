@@ -26,6 +26,7 @@ function addItem() {
     newButtonsBox.appendChild(newCheckButton);
     newButtonsBox.appendChild(newDelButton);
     menu.appendChild(newItem);
+    field.value = '';
 
     //delete item
     let del = document.getElementsByClassName('del');
