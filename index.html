@@ -4,58 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Nate Portfolio</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <script src="main.js" defer></script>
 </head>
 <body>
     <div id="main">
-        <header id="header">
-            <div id="title-container">
-                <h1 id="title">Glad you're here. Please, feel at home.</h1>
+        <div id="navigation">
+            <div id="logo">
+                <div id="logo1">Nate</div>
+                <div id="logo2">Corpuz</div>
             </div>
-            <div class="menu-container">
-                <ul id="nav-menu">
-                    <li class="nav-item">Home</li>
-                    <li class="nav-item">Projects</li>
-                    <li class="nav-item">Journey</li>
-                    <li class="nav-item">Connect</li>
+            <ul id="menu">
+                <li class="item"><a href="#main" id="home">Home</a></li>
+                <li class="item"><a href="#" id="projects">Projects</a></li>
+                <li class="item"><a href="#" id="contact">Contact</a></li>
+            </ul>
+            <div id="burger-button">
+                <div id="bar"></div>
+            </div>
+            <div id="burger">
+                <ul id="burger-menu">
+                    <li class="burger-item"><a href="#main" id="burger-home">Home</a></li>
+                    <li class="burger-item"><a href="#" id="burger-projects">Projects</a></li>
+                    <li class="burger-item"><a href="#" id="burger-contact">Contact</a></li>
                 </ul>
             </div>
-        </header>
-        <section id="projects">
-            <div id="projects-intro">
-                <p id="projects-intro-content">This is a collection of projects I've worked on since I started learning how to code.</p>
+        </div>
+        <div id="hero">
+            <div id="hero-box">
+                <div id="title">Welcome</div>
+                <div class="break"></div>
+                <div id="description">A virtual tour of my programming life</div>
+                <div class="break"></div>
+                <div id="start"></div>
             </div>
-            <div class="project-tile">
-                <h1 id="project-title">Project 1</h1>
-                <div class="image-container">
-                    <img src="" alt="">
-                </div>
-                <p id="project-desc"><a href="https://mentalfundamental.github.io/hello-nate/Practice/first-game/firstgame.html">Color game</a></p>
-            </div>
-            <div class="project-tile">
-                <h1 id="project-title">Project 2</h1>
-                <div class="image-container">
-                    <img src="" alt="">
-                </div>
-                <p id="project-desc"><a href="https://mentalfundamental.github.io/hello-nate/Practice/todolist/index.html">To-do List</a></p>
-            </div>
-        </section>
-        <section id="journey">
-            <h1 id="journey-intro">This is my story.</h1>
-            <p id="journey-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias odio, dignissimos voluptates veritatis provident tempora, sit ex, dolorum totam dolores nostrum voluptatibus quo ab corporis facilis doloremque illo tempore quisquam recusandae maiores? Voluptates eveniet, consectetur dolorem reprehenderit velit in mollitia quibusdam rerum sed est laudantium voluptatum quaerat quas quod?</p>
-        </section>
-        <footer id="footer">
-            <div class="socials-container">
-                <ul id="socials-menu">
-                    <li class="socials-item">Facebook</li>
-                    <li class="socials-item">Twitter</li>
-                    <li class="socials-item">Instagram</li>
-                    <li class="socials-item">Github</li>
-                </ul>
-            </div>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
