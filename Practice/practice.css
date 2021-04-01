@@ -1,12 +1,211 @@
-* {
-    box-sizing: border-box;
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+
+html {
+    background-color: rgb(50,50,50);
+}
+
+#main {
+    height: 100vh;
+    position: relative;
     color: white;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+#navigation {
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    background-color: rgb(22, 22, 22);
+    color: white;
 }
 
+#logo {
+    font-weight: bold;
+    font-size: 3vmin;
+    animation: test 1s cubic-bezier(0.42, 0, 0, 1.32) infinite alternate;
+}
+
+@keyframes test {
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+#logo1, #logo2 {
+    cursor: pointer;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#burger-button {
+    display: none;
+    z-index: 99;
+}
+
+#burger {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(22, 22, 22);
+    z-index: 98;
+    justify-content: center;
+    align-items: center;
+}
+
+#burger-menu {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+#burger-home, #burger-projects, #burger-contact {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+#burger-contact {
+    margin-bottom: 0;
+}
+
+@media (max-width: 362px) {
+    #logo {
+        font-size: 5vmin;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    #burger-button {
+        display: block;
+    }
+
+    #bar {
+        width: 43px;
+        height: 7px;
+        background-color: white;
+        position: relative;
+    }
+
+    #bar::before {
+        content: '';
+        width: 100%;
+        height: 7px;
+        position: absolute;
+        top: 13px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+    }
+
+    #bar::after {
+        content: '';
+        width: 100%;
+        height: 7px;
+        position: absolute;
+        top: -13px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+    }
+}
+
+.item a {
+    cursor: pointer;
+    margin-left: 2em;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#home::before, #projects::before, #contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: -15%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 150ms ease-in-out;
+}
+
+#home:hover::before, #projects:hover::before, #contact:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-box {
+    border: 1px solid white;
+    padding: 1em 2em;
+    width: 60%;
+    max-width: 750px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 6vmin;
+    margin-bottom: 10px;
+}
+
+.break {
+    border-bottom: 1px solid white;
+}
+
+#description {
+    margin: 10px 0;
+    font-size: 4vmin;
+}
+
+#start {
+    margin: 1em 0 0;
+    border-top: 4vmin solid transparent;
+    border-bottom: 4vmin solid transparent;
+    border-left: 12vmin solid white;
+    position: relative;
+    align-self: center;
+}
+
+#start:hover {
+    cursor: pointer;
+    border-left: 12vmin solid black;
+}
