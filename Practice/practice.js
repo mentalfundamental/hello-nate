@@ -1,17 +1,17 @@
-// function bouncer(arr) {
-//     arr.forEach(item => )    
-// }
-// console.log(bouncer([7, "ate", "", false, 9]));
+let usernameInput = 'oriusprime';
+let passwordInput = 'abc123';
+let online = true; 
 
-let arr = ['a', 0, false, null, NaN, 'b', 2, '', undefined, 'c'];
-arr.forEach(check);
-
-function check(item, index) {
-    console.log(`${item}: ${Boolean(item)}`);
+function User(username, password, online) {
+    this.username = username;
+    this.password = password;
+    this.online = online;
 }
 
-console.log(arr);
+let user1 = new User(usernameInput, passwordInput, online);
+let user2 = new User('sheena123', '123123abc', false);
 
-// let a = arr[1];
-// console.log(typeof a);
-// console.log(Boolean(a));
+let propertyList = [];
+for (let prop in user2) {
+    if (user2.hasOwnProperty(prop)) propertyList.push(prop);
+};
