@@ -15,3 +15,5 @@ let propertyList = [];
 for (let prop in user2) {
     if (user2.hasOwnProperty(prop)) propertyList.push(prop);
 };
+
+console.log(propertyList);
