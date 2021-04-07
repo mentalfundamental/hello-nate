@@ -1,19 +1,42 @@
-let usernameInput = 'oriusprime';
-let passwordInput = 'abc123';
-let online = true; 
+//
+let log = v => {console.log(v)};
+//
 
-function User(username, password, online) {
-    this.username = username;
-    this.password = password;
-    this.online = online;
-}
-
-let user1 = new User(usernameInput, passwordInput, online);
-let user2 = new User('sheena123', '123123abc', false);
-
-let propertyList = [];
-for (let prop in user2) {
-    if (user2.hasOwnProperty(prop)) propertyList.push(prop);
+function User(email, name) {
+    this.email = email;
+    this.name = name;
+    this.online = false;
 };
 
-console.log(propertyList);
+User.prototype.login = function() {
+    this.online = true;
+    log(`${this.email} has logged in`)
+}
+
+User.prototype.logout = function() {
+    this.online = false;
+    log(`${this.email} has logged out`)
+}
+
+function Admin(...args) {
+    User.apply(this, args);
+    this.role = 'super admin';
+}
+
+Admin.prototype = Object.create(User.prototype);
+
+Admin.prototype.deleteUser = function (user) {
+    users = users.filter(u => {
+        return u.email != user.email;
+    });
+};
+
+let user1 = new User('natecorpuz@gmail.com', 'Nate');
+let user2 = new User('NashCorpuz@gmail.com', 'Nash');
+let admin = new Admin('nate.corpuz.1@gmail.com', 'Nate%!');
+
+let users = [user1, user2, admin];
+
+log(admin);
+admin.deleteUser(admin);
+log(users);
