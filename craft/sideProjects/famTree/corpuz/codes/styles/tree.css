@@ -1,0 +1,15 @@
+#tree-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#gf-image-content {
+    width: 100px;
+    height: 100px;
+}
+
+#gm-image-content {
+    width: 100px;
+    height: 100px;
+}
