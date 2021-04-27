@@ -4,6 +4,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-#test {
-    font-family: 'Open Sans', sans-serif;
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#num, #new-price {
+    margin-top: 1em;
 }
