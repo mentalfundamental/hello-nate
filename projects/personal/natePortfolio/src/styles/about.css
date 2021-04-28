@@ -21,7 +21,6 @@
 }
 
 @media (min-width: 650px) {
-
     #story h1 {
         font-size: 3vmin;
         transform: translateX(-20%);
