@@ -5,18 +5,14 @@
     justify-content: space-around;
     height: 100vh;
     width: 90%;
+    padding-bottom: 50px;
+    /* display: none; */
 }
 
-#titles-box {
+#titles-box, #identity-box {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-#identity-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 #options-box ul{
@@ -28,14 +24,15 @@
 #socials-box ul {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 25px;
 }
+
+/* logo START */
 
 
 #logo-box {
     position: absolute;
     display: flex;
-    /* border: 1px solid red; */
     height: 80vh;
     width: 80vw;
     justify-content: flex-end;
@@ -48,7 +45,7 @@
     height: 70px;
     width: 70px;
     border: 1px solid var(--darkgray);
-    animation: rotating 2s ease-in-out 0.5s infinite;
+    animation: rotating 15s linear 0.5s infinite;
     border-radius: 8px;
     transform: rotate(45deg);
 }
@@ -61,7 +58,7 @@
     width: 30px;
     border: 1px solid var(--darkgray);
     border-radius: 5px;
-    animation: rotating2 2s ease-in-out 0.5s infinite;
+    animation: rotating2 15s linear 0.5s infinite;
 }
 
 .light {
@@ -72,8 +69,8 @@
     width: 15px;
     background-color: white;
     border-radius: 50%;
-    animation: blurring 2s ease-in-out 0.5s infinite;
-    filter: blur(2px);
+    animation: blurring 30s linear 0.5s infinite;
+    filter: blur(18px);
 }
 
 .light1 {
@@ -87,6 +84,10 @@
     /* animation: blurring 2s ease-in-out 0.5s infinite; */
     filter: blur(2px);
 }
+
+/* logo END */
+
+/*keyframes*/
 
 @keyframes rotating {
     100% {
@@ -102,12 +103,12 @@
 
 @keyframes blurring {
     100% {
-        filter: blur(2px);
+        filter: blur(18px);
     }
     50% {
         filter: blur(40px);
     }
     0% {
-        filter: blur(2px);
+        filter: blur(18px);
     }
 }

@@ -1,0 +1,42 @@
+#projects-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#projects-label {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10vmin;
+}
+
+.nav {
+    position: absolute;
+    top: 30px;
+    left: 8vmin;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8vmin;
+}
+
+.nav h1 {
+    font-size: 4vmin;
+}
+
+.nav h1 a img {
+    opacity: 0.4;
+    width: 5vmin;
+    height: auto;
+}
