@@ -1,17 +1,16 @@
-body {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-}
-
 #box {
     margin: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
+    height: 100vh;
     width: 90%;
-    max-width: 700px;
+}
+
+#titles-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #identity-box {
@@ -23,11 +22,92 @@ body {
 #options-box ul{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 35px;
 }
 
 #socials-box ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 35px;
+}
+
+
+#logo-box {
+    position: absolute;
+    display: flex;
+    /* border: 1px solid red; */
+    height: 80vh;
+    width: 80vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: -1;
+}
+
+#box-1 {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border: 1px solid var(--darkgray);
+    animation: rotating 2s ease-in-out 0.5s infinite;
+    border-radius: 8px;
+    transform: rotate(45deg);
+}
+
+#box-2 {
+    bottom: 18px;
+    right: 20px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--darkgray);
+    border-radius: 5px;
+    animation: rotating2 2s ease-in-out 0.5s infinite;
+}
+
+.light {
+    position: absolute;
+    bottom: 25px;
+    right: 27px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blurring 2s ease-in-out 0.5s infinite;
+    filter: blur(2px);
+}
+
+.light1 {
+    position: absolute;
+    bottom: 25px;
+    right: 27px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    /* animation: blurring 2s ease-in-out 0.5s infinite; */
+    filter: blur(2px);
+}
+
+@keyframes rotating {
+    100% {
+        transform: rotate(225deg)
+    }
+}
+
+@keyframes rotating2 {
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes blurring {
+    100% {
+        filter: blur(2px);
+    }
+    50% {
+        filter: blur(40px);
+    }
+    0% {
+        filter: blur(2px);
+    }
 }
