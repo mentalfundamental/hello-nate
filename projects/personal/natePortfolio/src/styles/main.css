@@ -22,6 +22,10 @@
     gap: 5px;
 }
 
+#titles-box {
+    font-size: 3.5vmin;
+}
+
 #options-box ul{
     display: flex;
     flex-direction: column;
