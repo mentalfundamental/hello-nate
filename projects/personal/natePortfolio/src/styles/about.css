@@ -16,8 +16,8 @@
 
 #story p {
     font-size: 3.3vmin;
-    text-indent: 4vmin;
-    line-height: 6vmin;
+    line-height: 5vmin;
+    text-align: justify;
 }
 
 @media (min-width: 650px) {
